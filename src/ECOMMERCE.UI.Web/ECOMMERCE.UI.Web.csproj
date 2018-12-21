@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-ECOMMERCE.UI.Web-A45E1466-0910-40B0-B75B-BE36D7DFFAA0</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.4" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ECOMMERCE.ApplicationCore\ECOMMERCE.ApplicationCore.csproj" />
+    <ProjectReference Include="..\ECOMMERCE.Infrastructure\ECOMMERCE.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
