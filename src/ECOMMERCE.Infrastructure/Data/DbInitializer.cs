@@ -16,13 +16,19 @@ namespace ECOMMERCE.Infrastructure.Data
             var clientes = new Cliente[]
             {
                 new Cliente {
-                    Nome = "Fulano da Silva",
-                    CPF = "76664173735"
+
+                    Nome = "Fulano",
+                    Sobrenome= "Silva",
+                    CPF = "76664173735",
+                    Ativo=true
+
                 },
 
                  new Cliente {
-                    Nome = "Beltrano da Silva",
-                    CPF = "54589486377"
+                    Nome = "Beltrano",
+                    Sobrenome="Silva",
+                    CPF = "54589486377",
+                    Ativo=false
                 }
             };
 

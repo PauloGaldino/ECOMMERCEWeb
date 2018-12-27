@@ -15,6 +15,7 @@
         //Chave estrangeira
         public int ClienteId { get; set; }
         
+        //Propriedade de navegação
         public Cliente Cliente { get; set; }
     }
 }
