@@ -1,4 +1,4 @@
-﻿namespace ECOMMERCE.ApplicationCore.Entities
+﻿namespace SGREFRI.ApplicationCore.Entities
 {
     public class Contato
     {
@@ -6,16 +6,18 @@
         {
 
         }
-
         public int ContatoId { get; set; }
-        public string Nome { get; set; }
-        public string Telefone { get; set; }
-        public string Email { get; set; }
 
-        //Chave estrangeira
-        public int ClienteId { get; set; }
-        
-        //Propriedade de navegação
-        public Cliente Cliente { get; set; }
+
+        //Chave Estrangeira /Chave de navegação
+        public int PessoaId { get; set; }
+        public Pessoa Pessoa { get; set; }
+
+        public int EmailId { get; set; }
+        public Email Email { get; set; }
+
+        public int TelefoneId { get; set; }
+       // public Telefone Telefone { get; set; }
     }
+
 }

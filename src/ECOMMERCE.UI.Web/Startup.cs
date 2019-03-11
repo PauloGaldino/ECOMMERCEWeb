@@ -13,6 +13,7 @@ using ECOMMERCE.UI.Web.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ECOMMERCE.Infrastructure.Data;
+using SGREFRI.Infrastructure.Data;
 
 namespace ECOMMERCE.UI.Web
 {
@@ -41,6 +42,10 @@ namespace ECOMMERCE.UI.Web
 
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDbContext<GeneralContext>(options =>
+               options.UseSqlServer(
+                   Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDbContext<ECOMMERCEContext>(options =>
                 options.UseSqlServer(

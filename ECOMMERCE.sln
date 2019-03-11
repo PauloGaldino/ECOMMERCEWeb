@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECOMMERCE.Tests", "src\ECOM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECOMMERCE.UI.Web", "src\ECOMMERCE.UI.Web\ECOMMERCE.UI.Web.csproj", "{67E65326-750D-44FE-A41F-D4194409318F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Outros", "Outros", "{7B297649-0C92-4636-A02F-7CD3743B88BF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

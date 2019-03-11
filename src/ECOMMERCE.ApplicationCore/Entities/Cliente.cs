@@ -1,19 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
+﻿
+using System;
 
-namespace ECOMMERCE.ApplicationCore.Entities
+namespace SGREFRI.ApplicationCore.Entities
 {
-    public class Cliente
+   public class Cliente
     {
         public Cliente()
         {
-
+                
         }
         public int ClienteId { get; set; }
-        public string Nome { get; set; }
-        public string Sobrenome { get; set; }
-        public string CPF { get; set; }
-
         public DateTime DataCadastro { get; set; }
         public bool Ativo { get; set; }
 
@@ -23,11 +19,12 @@ namespace ECOMMERCE.ApplicationCore.Entities
             return cliente.Ativo && DateTime.Now.Year - cliente.DataCadastro.Year >= 5;
         }
 
-        //Coleções
-        public ICollection<EnderecoCliente> EnderecosClientes { get; set; }
-        public ICollection<Contato> Contatos { get; set; }
-        public ICollection<ProfissaoCliente> ProfissoesClientes { get; set; }
+        //Chave estrangeria
+        public int PessoaId { get; set; }
 
+        //Propriedade de navegação
+        public Pessoa Pessoa { get; set; }
 
     }
+
 }

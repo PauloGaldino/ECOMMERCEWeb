@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SGREFRI.ApplicationCore.Entities.Pessoa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Cadastro de Pessoas</h2>
+
+<p>
+    <a asp-action="Create">Adicionar nova Pessoa</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sobrenome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PessoaTipo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sobrenome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PessoaTipo.Descricao)
+            </td>
+            <td>
+                |
+                <a asp-action="Edit" asp-route-id="@item.PessoaId">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.PessoaId">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.PessoaId">Excluir</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ECOMMERCE.ApplicationCore.Entities
+namespace SGREFRI.ApplicationCore.Entities
 {
     public class Profissao
     {
@@ -9,12 +9,10 @@ namespace ECOMMERCE.ApplicationCore.Entities
 
         }
         public int ProfissaoId { get; set; }
-        public string ProfissaoNome { get; set; }
+        public string Nome { get; set; }
         public string Descricao { get; set; }
         public string CBO { get; set; }
 
-        //Coleçoes
-        public ICollection<ProfissaoCliente> ProfissoesClientes { get; set; }
-
+        public ICollection<ProfissaoPessoa> ProfissaoPessoa { get; set; }
     }
 }

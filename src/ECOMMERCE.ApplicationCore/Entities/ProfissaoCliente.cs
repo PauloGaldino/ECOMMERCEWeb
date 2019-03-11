@@ -1,4 +1,6 @@
-﻿namespace ECOMMERCE.ApplicationCore.Entities
+﻿using SGREFRI.ApplicationCore.Entities;
+
+namespace ECOMMERCE.ApplicationCore.Entities
 {
     public class ProfissaoCliente
     {
