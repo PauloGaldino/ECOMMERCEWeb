@@ -20,4 +20,8 @@
     <ProjectReference Include="..\ECOMMERCE.Infrastructure\ECOMMERCE.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Content\" />
+  </ItemGroup>
+
 </Project>
